@@ -14,7 +14,11 @@
   </a>
 </p>
 
-> PDF Viewer Component for Angular 5+
+> PDF Viewer Component for Angular 17
+This Library updated to support Angular 17 (Might not be compatible with lower versions)
+
+Orginal Author: [Vadim Dezhin](https://github.com/vadimdez)
+Repository: [https://github.com/vadimdez/ng2-pdf-viewer](https://github.com/vadimdez/ng2-pdf-viewer)
 
 ### Demo page
 
@@ -550,10 +554,6 @@ search(stringToSearch: string) {
 ## Contribute
 [See CONTRIBUTING.md](CONTRIBUTING.md)
 
-## Donation
-If this project help you reduce time to develop, you can give me a cup of tea :)
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/vadimdez)
 
 ## License
 
