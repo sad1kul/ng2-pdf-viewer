@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.17 (2025-02-11)
+- Version correction from 1.0.0-angular17 to 1.0.17
+
+## 1.0.17 (2025-02-11)
+- Forked from ng2-pdf-viewer 10.4.0
+- Updated for Angular 17 compatibility
+- Updated ownership to @sad1kul
+
+## 1.0.0-angular17 (2025-02-11)
+- Forked from ng2-pdf-viewer 10.4.0
+- Updated for Angular 17 compatibility
+- Updated ownership to @sad1kul
+
 ## 10.4.0 - 01.12.2024
 
 - [[#1148](https://github.com/VadimDez/ng2-pdf-viewer/issues/1148)] - Update pdfjs-dist dependency to the latest version for better compatibility
@@ -436,13 +449,8 @@ scrollToPage(page: number) {
 
 ## 3.0.6
 
-- [[#200](https://github.com/VadimDez/ng2-pdf-viewer/issues/200)] - PDFDocumentProxy, PDFProgressData are undefined for compiler
-
-Now you can import types where you need them directly from 'ng2-pdf-viewer' package:
-
-```ts
-import { PDFDocumentProxy, PDFProgressData } from 'ng2-pdf-viewer';
-```
+- [[#200](https://github.com/VadimDez/ng2-pdf-viewer/issues/200)] - Support zoom
+- other minor changes
 
 ## 3.0.5
 
@@ -696,7 +704,7 @@ Re-installing of package may be required.
 
 ## 0.0.7
 
-- [#2](https://github.com/VadimDez/ng2-pdf-viewer/issues/2) - Added webpack compatibility
+- [[#2](https://github.com/VadimDez/ng2-pdf-viewer/issues/2)] - Added webpack compatibility
 - Changed default value for original size flag
 
 ## 0.0.6

@@ -58,7 +58,7 @@ npm install ng2-pdf-viewer@~3.0.8
 
 ## Usage
 
-*In case you're using ```systemjs``` see configuration [here](https://github.com/VadimDez/ng2-pdf-viewer/blob/master/SYSTEMJS.md).*
+*In case you're using ```systemjs``` see configuration [here](https://github.com/sad1kul/ng2-pdf-viewer/blob/master/SYSTEMJS.md).*
 
 Add ```PdfViewerModule``` to your module's ```imports```
 
@@ -520,7 +520,8 @@ In your code update `path` to the worker to be for example `/pdf.worker.mjs`
 
 If you ever have a (super rare) edge case where you run in an environment that multiple
 components are somehow loaded within the same web page, sharing the same window,
-but using different versions of pdf.worker, support has been added.  You can do the
+but using different versions of pdfjs required and override the
+custom path *just for that version*.  You can do the
 above, except that you can append the specific version of pdfjs required and override the
 custom path *just for that version*.  This way setting the global window var won't conflict.
 ```typescript
@@ -557,4 +558,3 @@ If this project help you reduce time to develop, you can give me a cup of tea :)
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
-

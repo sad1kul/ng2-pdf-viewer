@@ -41,8 +41,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "30kb"
+                  "maximumWarning": "25kb",
+                  "maximumError": "50kb"
                 }
               ],
               "fileReplacements": [
@@ -60,6 +60,18 @@
               "buildOptimizer": true
             },
             "development": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ],
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -74,10 +86,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng2-pdf-viewer:build:production"
+              "buildTarget": "ng2-pdf-viewer:build:production"
             },
             "development": {
-              "browserTarget": "ng2-pdf-viewer:build:development"
+              "buildTarget": "ng2-pdf-viewer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +97,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng2-pdf-viewer:build"
+            "buildTarget": "ng2-pdf-viewer:build"
           }
         },
         "test": {

@@ -2,7 +2,7 @@
 
 1. Clone the project
 ```
-git clone https://github.com/VadimDez/ng2-pdf-viewer.git
+git clone https://github.com/sad1kul/ng2-pdf-viewer.git
 ```
 
 2. Install dependencies
