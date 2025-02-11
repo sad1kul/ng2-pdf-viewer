@@ -42,7 +42,11 @@ Repository: [https://github.com/vadimdez/ng2-pdf-viewer](https://github.com/vadi
 * [Search in the PDF](#search-in-the-pdf)
 * [Contribute](#contribute)
 
-## Install
+## Install Angular 17
+
+npm install @sad1kul/ng2-pdf-viewer
+```
+> Partial Ivy compilated library bundles.
 
 ### Angular >= 12
 ```
