@@ -561,4 +561,4 @@ search(stringToSearch: string) {
 
 ## License
 
-[MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
+[MIT](https://tldrlegal.com/license/mit-license) © [Sadikul Islam](https://github.com/sad1kul)
