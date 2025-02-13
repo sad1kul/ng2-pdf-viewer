@@ -12,6 +12,9 @@
   <a href="https://www.paypal.me/vadimdez" title="Donate to this project using Paypal">
     <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" />
   </a>
+  <a href="https://www.paypal.me/vadimdez" title="Donate to this project using Paypal">
+    <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" />
+  </a>
 </p>
 
 > PDF Viewer Component for Angular 17
