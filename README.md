@@ -9,9 +9,6 @@
   <a href="https://gitter.im/ngx-pdf-viewer/Lobby" title="Gitter">
     <img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg" alt="Gitter"/>
   </a>
-  <a href="https://www.paypal.me/vadimdez" title="Donate to this project using Paypal">
-    <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" />
-  </a>
 </p>
 
 > PDF Viewer Component for Angular 17
@@ -45,8 +42,7 @@ Repository: [https://github.com/vadimdez/ng2-pdf-viewer](https://github.com/vadi
 ## Install Angular 17
 
 npm install @sad1kul/ng2-pdf-viewer
-```
-> Partial Ivy compilated library bundles.
+to avoid typescript errors make sure you have typescript installed "typescript": >= 5.2.2
 
 ### Angular >= 12
 ```
