@@ -14,8 +14,69 @@
   </a>
 </p>
 
-> PDF Viewer Component for Angular 17
-This Library updated to support Angular 17 (Might not be compatible with lower versions)
+# Angular PDF Viewer
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/VadimDez/ng2-pdf-viewer/master/src/assets/ng2-pdf-viewer.png" alt="Angular PDF Viewer" />
+</p>
+
+> PDF Viewer Component for Angular 13+ with support for Angular 17
+
+## Features
+
+* Supports Angular 13+ through 17
+* Standalone component support
+* Works with both module-based and standalone applications
+* Render PDF pages on canvas
+* Text layer with text selection and search
+* Zoom and rotation
+* Pagination
+* Page rendering control
+* Multiple PDF documents
+* Easy to use
+
+## Installation
+
+```bash
+npm install ng2-pdf-viewer --save
+```
+
+## Usage
+
+### Module-based approach:
+
+```typescript
+import { NgModule } from '@angular/core';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
+@NgModule({
+  imports: [PdfViewerModule]
+})
+export class AppModule { }
+```
+
+### Standalone approach:
+
+```typescript
+import { Component } from '@angular/core';
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [PdfViewerComponent],
+  template: `
+    <pdf-viewer [src]="pdfSrc"
+                [render-text]="true"
+                [original-size]="false"
+                style="width: 100%; height: 600px;"
+    ></pdf-viewer>
+  `
+})
+export class AppComponent {
+  pdfSrc = "https://example.com/sample.pdf";
+}
+```
 
 Orginal Author: [Vadim Dezhin](https://github.com/vadimdez)
 Repository: [https://github.com/vadimdez/ng2-pdf-viewer](https://github.com/vadimdez/ng2-pdf-viewer)

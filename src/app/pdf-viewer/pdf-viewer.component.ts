@@ -67,14 +67,15 @@ export enum RenderTextMode {
       <div class="pdfViewer"></div>
     </div>
   `,
-  styleUrls: ['./pdf-viewer.component.scss']
+  styleUrls: ['./pdf-viewer.component.scss'],
+  standalone: true
 })
 export class PdfViewerComponent
   implements OnChanges, OnInit, OnDestroy, AfterViewChecked {
   static CSS_UNITS = 96.0 / 72.0;
   static BORDER_WIDTH = 9;
 
-  @ViewChild('pdfViewerContainer') pdfViewerContainer!: ElementRef<HTMLDivElement>;
+  @ViewChild('pdfViewerContainer', { static: true }) pdfViewerContainer!: ElementRef<HTMLDivElement>;
 
   public eventBus!: PDFJSViewer.EventBus;
   public pdfLinkService!: PDFJSViewer.PDFLinkService;
@@ -389,13 +390,13 @@ export class PdfViewerComponent
 
     fromEvent<CustomEvent>(this.eventBus, 'pagerendered')
       .pipe(takeUntil(this.destroy$))
-      .subscribe((event) => {
+      .subscribe((event: CustomEvent) => {
         this.pageRendered.emit(event);
       });
 
     fromEvent<CustomEvent>(this.eventBus, 'pagesinit')
       .pipe(takeUntil(this.destroy$))
-      .subscribe((event) => {
+      .subscribe((event: CustomEvent) => {
         this.pageInitialized.emit(event);
       });
 
@@ -414,7 +415,7 @@ export class PdfViewerComponent
 
     fromEvent<CustomEvent>(this.eventBus, 'textlayerrendered')
       .pipe(takeUntil(this.destroy$))
-      .subscribe((event) => {
+      .subscribe((event: CustomEvent) => {
         this.textLayerRendered.emit(event);
       });
   }
@@ -443,6 +444,9 @@ export class PdfViewerComponent
       l10n: new PDFJSViewer.GenericL10n('en'),
       imageResourcesPath: this._imageResourcesPath,
       annotationEditorMode: PDFJS.AnnotationEditorType.DISABLE,
+      enableScripting: false,
+      renderInteractiveForms: true,
+      enablePrintAutoRotate: true
     };
   }
 

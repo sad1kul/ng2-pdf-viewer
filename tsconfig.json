@@ -24,11 +24,16 @@
       "dom"
     ],
     "skipLibCheck": true, // see https://github.com/mozilla/pdf.js/issues/16705
+    "paths": {
+      "ng2-pdf-viewer": ["dist/ng2-pdf-viewer"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "enableIvy": true,
+    "compilationMode": "partial"
   }
 }
