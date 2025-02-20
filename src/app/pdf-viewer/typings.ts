@@ -1,21 +1,12 @@
-import type { PDFDocumentProxy } from 'pdfjs-dist/types/src/display/api';
-import type { PDFDocumentLoadingTask } from 'pdfjs-dist/types/src/display/api';
-import type { PDFPageProxy } from 'pdfjs-dist/types/src/display/api';
-import type { DocumentInitParameters } from 'pdfjs-dist/types/src/display/api';
-import type { PDFViewerOptions as _PDFViewerOptions } from 'pdfjs-dist/types/web/pdf_viewer';
-
-export { PDFDocumentProxy, PDFDocumentLoadingTask, PDFPageProxy };
-export type PDFSource = DocumentInitParameters;
+export type PDFPageProxy = import('pdfjs-dist/types/src/display/api').PDFPageProxy;
+export type PDFSource = import('pdfjs-dist/types/src/display/api').DocumentInitParameters;
+export type PDFDocumentProxy = import('pdfjs-dist/types/src/display/api').PDFDocumentProxy;
+export type PDFDocumentLoadingTask = import('pdfjs-dist/types/src/display/api').PDFDocumentLoadingTask;
+export type PDFViewerOptions = import('pdfjs-dist/types/web/pdf_viewer').PDFViewerOptions;
 
 export interface PDFProgressData {
   loaded: number;
   total: number;
 }
 
-export type ZoomScale = 'page-width' | 'page-fit' | 'page-height';
-
-export interface PDFViewerOptions extends _PDFViewerOptions {
-  enableScripting?: boolean;
-  renderInteractiveForms?: boolean;
-  enablePrintAutoRotate?: boolean;
-}
+export type ZoomScale = 'page-height' | 'page-fit' | 'page-width';
